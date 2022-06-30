@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 比较新的es语法
+    "module": "esnext", // 最新的esmodule
+    "moduleResolution": "node", // 通过node的方式来解析模块
+    "strict": true,
+    "jsx": "preserve", // ts不编译jsx语法 留给后面的插件来进行编译
+    "sourceMap": true,
+    "resolveJsonModule": true, // 是否可以import json
+    "esModuleInterop": true, // 可以直接使用import from
+    "lib": ["ESNext", "DOM"],
+    "types": ["vite/client"], // 可以引用 import.meta中的属性
+    "isolatedModules": true // 使ts文件之间进行关联
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/*.vue", "src/main.js"]
+  
+}

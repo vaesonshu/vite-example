@@ -1,0 +1,10 @@
+@import url('@styles/other.css');
+/* 使用css变量 */
+:root {
+  --main-bg-color: red;
+}
+
+.root {
+  /* @console.error hello root */
+  color: var(--main-bg-color);
+}
